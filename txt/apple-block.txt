@@ -1,1 +1,12 @@
-
+! Title: Apple revoke block
+! Description: 
+! Last modified: 04 Sep 2025 00:00 UTC+7 
+! Version: 1 
+!
+||appattest.apple.com^
+||certs.apple.com^
+||crl.apple.com^
+||ocsp.apple.com^
+||ocsp2.apple.com^
+||valid.apple.com^
+||vpp.itunes.apple.com^
