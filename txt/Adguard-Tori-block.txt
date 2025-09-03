@@ -1,8 +1,7 @@
 ! Title: Tori's filter (block) 
-! Description: i see dead people 
-! Last modified: 28 Apr 2025 00:00 UTC+7 
-! Version: 1 
-! Homepage: http://summerdash.likesyou.org
+! Description: Block Tiktok + Shopee + Lazada, to avoid referral link clickbaits
+! Last modified: 04 Sep 2025 00:00 UTC+7 
+! Version: 1.1
 !
 ||shp.ee^ 
 ||shope.ee^ 
