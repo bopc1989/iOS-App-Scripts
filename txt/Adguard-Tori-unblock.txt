@@ -1,9 +1,7 @@
 ! Title: Tori's filter (unblock)
-! Description: i see dead people 
-! Last modified: 28 Apr 2025 00:00 UTC+7 
-! Version: 1 
-! Homepage: http://summerdash.likesyou.org
-! Unblock facebook telemetry 
+! Description: Unblock some Facebook telemetry to avoid breaking Meta apps
+! Last modified: 04 Sep 2025 00:00 UTC+7 
+! Version: 1  
 !
 @@||b-graph-fallback.facebook.com^ 
 @@||b-graph.facebook.com^ 
@@ -14,3 +12,4 @@
 @@||web.facebook.com^ 
 @@||web-fallback.facebook.com^ 
 @@||chat-e2ee.facebook.com^
+@@||register.appattest.apple.com^
