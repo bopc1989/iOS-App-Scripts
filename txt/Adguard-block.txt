@@ -1,7 +1,7 @@
 ! Title: [🌟] Anti referral + CocCoc tracking
-! Description: Block Tiktok + Shopee + Lazada, to avoid referral link clickbaits
-! Last modified: 04 Sep 2025 00:00 UTC+7 
-! Version: 1.1
+! Description: Block referral link clickbaits + CocCoc telemetry
+! Last modified: 23 Sep 2025 00:00 UTC+7 
+! Version: 1.2
 !
 ||shp.ee^ 
 ||shope.ee^ 
