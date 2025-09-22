@@ -1,4 +1,4 @@
-! Title: Tori's filter (unblock)
+! Title: [🌟] Unblock
 ! Description: Unblock some Facebook telemetry to avoid breaking Meta apps
 ! Last modified: 04 Sep 2025 00:00 UTC+7 
 ! Version: 1  
