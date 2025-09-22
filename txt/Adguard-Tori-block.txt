@@ -21,3 +21,4 @@
 ||nhaccuatui.com^
 ||coccoc.com^
 ||star.fallback.c10r.facebook.com^
+||star-mini.fallback.c10r.facebook.com^
