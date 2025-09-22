@@ -1,4 +1,4 @@
-! Title: Apple revoke block
+! Title: [🌟] Block iOS revoke servers
 ! Description: 
 ! Last modified: 04 Sep 2025 00:00 UTC+7 
 ! Version: 1 
