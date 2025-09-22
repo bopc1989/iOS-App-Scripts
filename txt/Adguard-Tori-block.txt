@@ -17,3 +17,6 @@
 ||shopee.io^
 ||cdngarenanow-a.akamaihd.net^
 ||revenuecat.com^
+||zingmp3.com^
+||nhaccuatui.com^
+||coccoc.com^
