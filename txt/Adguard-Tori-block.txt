@@ -20,3 +20,4 @@
 ||zingmp3.com^
 ||nhaccuatui.com^
 ||coccoc.com^
+||star.fallback.c10r.facebook.com^
