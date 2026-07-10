@@ -13,3 +13,5 @@
 @@||web-fallback.facebook.com^ 
 @@||chat-e2ee.facebook.com^
 @@||register.appattest.apple.com^
+@@||www.tiktok.com^
+@@||tiktok.com^
