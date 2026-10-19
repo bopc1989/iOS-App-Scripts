@@ -1,0 +1,41 @@
+#import <Foundation/Foundation.h>
+#import <objc/runtime.h>
+
+// Declare a fake interface to fool the compiler
+@interface FakeIntents : NSObject
++ (id)sharedPreferences;
++ (id)sharedVocabulary;
+@end
+
+@implementation FakeIntents
++ (id)sharedPreferences { return nil; }
++ (id)sharedVocabulary { return nil; }
+@end
+
+// Function that supports method swapping (Swizzling)
+void swizzleClassMethod(Class origClass, SEL origSel, Class fakeClass, SEL fakeSel) {
+    Method origMethod = class_getClassMethod(origClass, origSel);
+    Method fakeMethod = class_getClassMethod(fakeClass, fakeSel);
+    if (origMethod && fakeMethod) {
+        method_exchangeImplementations(origMethod, fakeMethod);
+        NSLog(@"[Hook] Successfully swizzled %@", NSStringFromSelector(origSel));
+    }
+}
+
+static void __attribute__((constructor)) initialize(void) {
+    NSLog(@"[Hook] Dylib loaded. Patching Siri classes...");
+
+    // 1. Patch INPreferences
+    Class prefClass = objc_getClass("INPreferences");
+    if (prefClass) {
+        swizzleClassMethod(prefClass, @selector(sharedPreferences), [FakeIntents class], @selector(sharedPreferences));
+    }
+
+    // 2. Patch INVocabulary
+    Class vocabClass = objc_getClass("INVocabulary");
+    if (vocabClass) {
+        swizzleClassMethod(vocabClass, @selector(sharedVocabulary), [FakeIntents class], @selector(sharedVocabulary));
+    }
+    
+    NSLog(@"[Hook] Patching complete.");
+}
